@@ -10,11 +10,11 @@ const Movies =  sequelize.define('Movies', {
         type: DataTypes.STRING,
         allowNull:false,
     },
-    posterURL :{
+    posterUrl :{
         type: DataTypes.STRING,
         allowNull:false,
     },
-    trailerURL :{
+    trailerUrl :{
         type: DataTypes.STRING,
         allowNull:false,
     },
@@ -37,6 +37,7 @@ const Movies =  sequelize.define('Movies', {
     isActive:{
         type: DataTypes.BOOLEAN,
         allowNull:false,
+        defaultValue: true,
     },
 })
 
