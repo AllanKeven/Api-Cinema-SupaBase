@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
+const sequelize = require('../database');
 
 const Movies =  sequelize.define('Movies', {
     title :{
@@ -10,11 +10,11 @@ const Movies =  sequelize.define('Movies', {
         type: DataTypes.STRING,
         allowNull:false,
     },
-    posterUrl :{
+    posterUrl:{
         type: DataTypes.STRING,
         allowNull:false,
     },
-    trailerUrl :{
+    trailerUrl:{
         type: DataTypes.STRING,
         allowNull:false,
     },
@@ -36,7 +36,7 @@ const Movies =  sequelize.define('Movies', {
     },
     isActive:{
         type: DataTypes.BOOLEAN,
-        allowNull:false,
+        allowNull: false,
         defaultValue: true,
     },
 })
