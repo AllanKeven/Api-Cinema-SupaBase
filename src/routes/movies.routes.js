@@ -3,7 +3,7 @@ const Movies = require("../models/Movies");
 const {
   getAllMovies,
   createNewMovie,
-} = require("../../../controllers/movies.controller");
+} = require("../controllers/movies.controller");
 const router = express.Router();
 
 router.get("/movies", getAllMovies);
